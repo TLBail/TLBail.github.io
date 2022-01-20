@@ -933,10 +933,18 @@ table.alt tbody tr td {
   height: 100%;
   padding: 3rem;
   text-align: center;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 
 .highlights .content .icon {
   font-size: 5rem;
+}
+
+.highlights .content:hover {
+  background-color: rgba(0, 0, 0, 0.048);
+  -webkit-box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .highlights > div > :last-child {
@@ -1062,9 +1070,9 @@ table.alt tbody tr td {
 }
 
 .highlights .content {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
-          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+  background: #00000005;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
 }
 
 /* Testimonials */
@@ -2851,9 +2859,9 @@ ul.icons li .icon:before {
 }
 
 #banner .highlights .content {
-  background: #111111;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
-          box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
+  background: #00000005;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
 }
 
 #banner .testimonials .content {
@@ -3204,9 +3212,9 @@ body.is-preload #banner:before {
 }
 
 #cta .highlights .content {
-  background: #ce1b28;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
-          box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
+  background: #00000005;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
 }
 
 #cta .testimonials .content {
@@ -3437,9 +3445,9 @@ body.is-preload #banner:before {
 }
 
 #cta2 .highlights .content {
-  background: #ce1b28;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
-          box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
+  background: #00000005;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
 }
 
 #cta2 .testimonials .content {
@@ -3665,9 +3673,9 @@ body.is-preload #banner:before {
 }
 
 #footer .highlights .content {
-  background: #111111;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
-          box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
+  background: #00000005;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
 }
 
 #footer .testimonials .content {
@@ -4112,9 +4120,9 @@ body:before {
 }
 
 #heading .highlights .content {
-  background: #111111;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
-          box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
+  background: #00000005;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
 }
 
 #heading .testimonials .content {
