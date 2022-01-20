@@ -1,3 +1,62 @@
 .linkedingicon {
     background-image: url("https://cdn-icons-png.flaticon.com/512/174/174857.png");
 }
+
+.hand {
+    animation: agiter 0.5s ease;
+    animation-iteration-count: 0;
+    position: absolute;
+}
+
+.hand:hover {
+    animation-iteration-count: infinite;
+}
+
+h2:hover .hand {
+    animation-iteration-count: infinite;
+}
+@keyframes agiter {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.dropdowncontent {
+    visibility: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+    opacity: 0;
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.dropdown {
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.dropdowncontent:hover {
+    visibility: visible;
+    opacity: 1;
+    height: fit-content;
+}
+
+.dropdown:hover .dropdowncontent {
+    opacity: 1;
+    visibility: visible;
+    height: fit-content;
+}
