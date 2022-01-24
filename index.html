@@ -88,8 +88,8 @@
 							<h3>CV</h3>
 						</header>
 						<div class="dropdown">
-							<a href="https://tlbail.fr/cv" class="button primary fit">voir mon cv</a>
-
+							<a href="/cvtheolebail.pdf" class="button primary fit">voir mon cv</a>
+							<!-- 
 							<ul class="dropdowncontent">
 								<li>
 									<a href="/cvtheolebail.pdf" class="button primary fit">telecharger en pdf</a>
@@ -97,7 +97,7 @@
 								<li>
 									<a href="https://tlbail.fr/cv" class="button primary fit">voir mon cv</a>
 								</li>
-							</ul>
+							</ul> -->
 						</div>
 					</div>
 				</section>
@@ -155,11 +155,33 @@
 	</section>
 
 	<section id="main" class="wrapper">
-		<div class="inner">
+		<div id="sommaireProjetboye" class="sommaireProject">
+
+			<ul>
+				<li class="vr">
+				<li onclick="goto('#android')">
+					Android
+				</li>
+				<li class="vr">
+				</li>
+				<li onclick="goto('#web')">
+					Web
+				</li>
+				<li class="vr">
+				</li>
+				<li onclick="goto('#javaFx')">
+					javaFx
+				</li>
+				<li class="vr"></li>
+			</ul>
+
+		</div>
+		<div id="visor" class="inner">
+
 			<div class="content">
 
-				<hr>
-				<h1 id="android">
+				<hr id="android">
+				<h1>
 					Android
 				</h1>
 				<hr>
@@ -202,8 +224,9 @@
 					</p>
 
 				</div>
-				<hr>
-				<h1 id="web">WEB</h1>
+
+				<hr id="web">
+				<h1>WEB</h1>
 				<hr>
 				<div class="box">
 
@@ -255,8 +278,8 @@
 					</p>
 				</div>
 
-				<hr>
-				<h1 id="javaFx">javaFx</h1>
+				<hr id="javaFx">
+				<h1>javaFx</h1>
 				<hr>
 				<div class="box">
 					<h3>Scriber</h3>
@@ -343,6 +366,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/sommaire.js"></script>
 	<script src="assets/js/link.js"></script>
 
 </body>
