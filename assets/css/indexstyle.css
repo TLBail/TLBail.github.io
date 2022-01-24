@@ -100,6 +100,8 @@ h2:hover .hand {
     margin-left: 0;
     padding: 1em;
     transition: all 0.4s ease;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .sommaireProject ul li:hover {
@@ -111,7 +113,7 @@ ul li.vr {
     width: 1px;
     box-shadow: none;
     border: none;
-    border-left: 1px solid black;
+    border-left: 2px dashed black;
     flex-grow: 4;
     height: auto;
     margin-left: auto;
