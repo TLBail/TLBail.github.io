@@ -88,3 +88,9 @@
 @import "layout/heading";
 @import "layout/main";
 @import "layout/menu";
+
+.box {
+	display: block;
+	position: relative;
+	min-height: 280px;
+}
