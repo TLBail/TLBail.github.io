@@ -4384,6 +4384,65 @@ body.is-menu-visible #menu {
   visibility: visible;
 }
 
+.cityDexPhone {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cityDexPhone .phoneview {
+  background-color: #111111;
+  margin: 0;
+  padding: 1em;
+  color: white;
+  height: 100vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cityDexPhone .phoneview img {
+  position: relative;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+.cityDexPhone .content {
+  width: 50%;
+  padding: 1em;
+}
+
+.cityDexPhone .content .boxButton {
+  -webkit-box-shadow: 1px 1px 15px 5px #a7a7a7;
+          box-shadow: 1px 1px 15px 5px #a7a7a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  background-color: #faf8f8;
+}
+
+.cityDexPhone .content .boxButton .button {
+  margin: 1em;
+}
+
 .box {
   display: block;
   position: relative;
@@ -4393,4 +4452,38 @@ body.is-menu-visible #menu {
 .content header img {
   width: 35%;
   height: auto;
+}
+
+.navdropdown:hover .navdropdowncontent {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  visibility: visible;
+}
+
+.navdropdowncontent {
+  background-color: rgba(255, 0, 0, 0.13);
+  color: white;
+  height: 0;
+  position: relative;
+  visibility: hidden;
+  padding: 0;
+}
+
+.navdropdowncontent:hover {
+  height: auto;
+  position: relative;
+  padding: 2em;
+  margin: 0;
+  visibility: visible;
+}
+
+.navdropdowncontent li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navdropdowncontent li a:hover {
+  text-decoration: underline;
+  font-weight: 700;
 }

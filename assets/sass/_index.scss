@@ -1,0 +1,45 @@
+.box {
+    display: block;
+    position: relative;
+    min-height: 280px;
+}
+
+.content header img {
+    width: 35%;
+    height: auto;
+}
+
+.navdropdown {
+    &:hover {
+        .navdropdowncontent {
+            height: auto;
+            padding: 0;
+            margin: 0;
+            visibility: visible;
+        }
+    }
+}
+
+.navdropdowncontent {
+    background-color: rgba(255, 0, 0, 0.13);
+    color: white;
+    height: 0;
+    position: relative;
+    visibility: hidden;
+    padding: 0;
+    &:hover {
+        height: auto;
+        position: relative;
+        padding: 2em;
+        margin: 0;
+        visibility: visible;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            text-decoration: underline;
+            font-weight: 700;
+        }
+    }
+}
