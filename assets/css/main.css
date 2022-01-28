@@ -4487,3 +4487,8 @@ body.is-menu-visible #menu {
   text-decoration: underline;
   font-weight: 700;
 }
+
+.imgWrapper img {
+  width: 50vh;
+  height: auto;
+}
