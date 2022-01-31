@@ -11,11 +11,7 @@ var index = 0;
 
 
 var images = [
-    "./images/cityDexPlaystore.jpg",
-    "./images/citydexpage.jpg",
-    "./images/citydexstart.GIF",
-    "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saint-Omer-en-Chauss%C3%A9e-FR-60-panneau_d%27agglom%C3%A9ration-02.jpg"
-
+    "./images/flappyburne.png",
 ];
 function nextImg() {
 
