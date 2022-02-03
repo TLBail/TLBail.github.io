@@ -4503,6 +4503,10 @@ body.is-menu-visible #menu {
           animation: gradient 15s ease infinite;
 }
 
+#banner video {
+  display: block;
+}
+
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
