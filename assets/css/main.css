@@ -4447,6 +4447,7 @@ body.is-menu-visible #menu {
   display: block;
   position: relative;
   min-height: 280px;
+  margin: 2em;
 }
 
 .content header img {
@@ -4529,4 +4530,9 @@ body.is-menu-visible #menu {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.mediumImage {
+  width: 45%;
+  height: auto;
 }

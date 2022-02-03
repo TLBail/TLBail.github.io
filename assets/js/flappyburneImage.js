@@ -11,7 +11,11 @@ var index = 0;
 
 
 var images = [
-    "./images/flappyburne.png",
+    "./images/flappyburne0.jpg",
+    "./images/flappyburne1.jpg",
+    "./images/flappyburne2.jpg",
+    "./images/flappyburne3.jpg",
+    "./images/flappyburne4.jpg",
 ];
 function nextImg() {
 
