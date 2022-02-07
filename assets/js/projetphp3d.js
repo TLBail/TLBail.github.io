@@ -344,7 +344,7 @@ function text() {
             bevelOffset: 0,
             bevelSegments: 5
         };
-        var material = new THREE.MeshBasicMaterial({ color: 0x11ff00 });
+        var material = new THREE.MeshBasicMaterial({ color: 0x333333 });
 
 
         let geometry = new TextGeometry('Developpe ton empire !', config);
