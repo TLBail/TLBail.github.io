@@ -1,7 +1,7 @@
 import { GLTFLoader } from '/assets/js/threejs/GLTFLoader.js';
 import { TextGeometry } from '/assets/js/threejs/TextGeometry.js';
 import { FontLoader } from '/assets/js/threejs/FontLoader.js';
-let scene, camera, renderer, scrollPercent = 0, wind;
+let scene, camera, renderer, scrollPercent = 0, wind, blade;
 
 function init() {
 
@@ -148,6 +148,7 @@ function loadModel() {
     loader.load('model/lumberMill.glb', function (gltf) {
 
         let house = gltf.scene.children[0];
+        console.log(house);
         house.scale.set(20, 20, 20);
         house.position.set(-2000, -200, -100);
         scene.add(gltf.scene);
@@ -156,6 +157,21 @@ function loadModel() {
         console.error(error);
 
     });
+
+
+    loader.load('model/sawblade.glb', function (gltf) {
+
+        blade = gltf.scene.children[0];
+        console.log(blade);
+        blade.scale.set(20, 20, 20);
+        blade.position.set(-1800, -300, 0);
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+
+        console.error(error);
+
+    });
+
 
     loader.load('model/Wildmill.glb', function (gltf) {
 
@@ -433,6 +449,9 @@ function animate() {
 
     if (wind) {
         wind.rotation.set(Math.PI / 2, wind.rotation.y + 0.003, Math.PI / 2);
+    }
+    if (blade) {
+        blade.rotation.z += 0.05;
     }
 
     renderer.render(scene, camera);
