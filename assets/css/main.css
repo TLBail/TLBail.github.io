@@ -4536,3 +4536,18 @@ body.is-menu-visible #menu {
   width: 45%;
   height: auto;
 }
+
+#threecontainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 45px;
+  z-index: -1;
+}
+
+.text3dContent {
+  height: 100vh;
+  margin: 2em;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.089);
+  border-radius: 2em;
+}

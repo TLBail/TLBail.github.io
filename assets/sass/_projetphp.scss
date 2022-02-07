@@ -1,0 +1,16 @@
+#threecontainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 45px;
+    z-index: -1;
+}
+.content3d {
+}
+
+.text3dContent {
+    height: 100vh;
+    margin: 2em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 2em;
+}
