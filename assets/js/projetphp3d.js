@@ -27,6 +27,7 @@ function setup() {
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     const container = document.getElementById('threecontainer');
+    renderer.domElement.style.width = "100%";
     container.appendChild(renderer.domElement);
     OrbitControls();
 
