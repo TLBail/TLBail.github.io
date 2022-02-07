@@ -1,4 +1,6 @@
 import { GLTFLoader } from '/assets/js/threejs/GLTFLoader.js';
+import { TextGeometry } from '/assets/js/threejs/TextGeometry.js';
+import { FontLoader } from '/assets/js/threejs/FontLoader.js';
 let scene, camera, renderer, scrollPercent = 0, wind;
 
 function init() {
@@ -10,6 +12,8 @@ function init() {
     skybox();
 
     environement();
+
+    text();
 
     scroolSetup();
     animate();
@@ -322,6 +326,73 @@ function loadModel() {
 
 }
 
+
+function text() {
+
+    const loader = new FontLoader();
+
+    loader.load('assets/fonts/font2.json', function (font) {
+
+        let config = {
+            font: font,
+            size: 40,
+            height: 5,
+            curveSegments: 12,
+            bevelEnabled: true,
+            bevelThickness: 2,
+            bevelSize: 3,
+            bevelOffset: 0,
+            bevelSegments: 5
+        };
+        var material = new THREE.MeshBasicMaterial({ color: 0x11ff00 });
+
+
+        let geometry = new TextGeometry('Developpe ton empire !', config);
+        var textGeo = new THREE.Mesh(geometry, material);
+        textGeo.position.set(-4400, 100, 0);
+        scene.add(textGeo);
+
+        geometry = new TextGeometry('améliore tes batiments !', config);
+        textGeo = new THREE.Mesh(geometry, material);
+        textGeo.position.set(-3400, 100, 0);
+        scene.add(textGeo);
+
+        geometry = new TextGeometry('obtien des ressource', config);
+        textGeo = new THREE.Mesh(geometry, material);
+        textGeo.position.set(-2400, 100, 0);
+        scene.add(textGeo);
+
+        geometry = new TextGeometry('nourrit tes sujet ', config);
+        textGeo = new THREE.Mesh(geometry, material);
+        textGeo.position.set(-1400, 100, 0);
+        scene.add(textGeo);
+
+        geometry = new TextGeometry('projetphp', config);
+        textGeo = new THREE.Mesh(geometry, material);
+        textGeo.position.set(-400, 100, 0);
+        scene.add(textGeo);
+
+        config = {
+            font: font,
+            size: 220,
+            height: 5,
+            curveSegments: 12,
+            bevelEnabled: true,
+            bevelThickness: 8,
+            bevelSize: 5,
+            bevelOffset: 0,
+            bevelSegments: 5
+        };
+        var material = new THREE.MeshBasicMaterial({ color: 0xf54a60 });
+        geometry = new TextGeometry('DETRUIT LES TOUS', config);
+        textGeo = new THREE.Mesh(geometry, material);
+        textGeo.position.set(500, 100, -2000);
+        scene.add(textGeo);
+
+
+    });
+}
+
 function arch(x, y, z) {
     console.log('arch' + x + y + z)
     //bas
@@ -360,7 +431,7 @@ function animate() {
     camera.position.x = -4000 + scrollPercent * 90;
 
     if (wind) {
-        wind.rotation.set(Math.PI / 2, wind.rotation.y + 0.001, Math.PI / 2);
+        wind.rotation.set(Math.PI / 2, wind.rotation.y + 0.003, Math.PI / 2);
     }
 
     renderer.render(scene, camera);
