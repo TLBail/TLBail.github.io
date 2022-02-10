@@ -101,11 +101,11 @@ function environement() {
     cubeMesh0.position.y = -500;
     scene.add(cubeMesh0);
 
-    geometry = new THREE.BoxGeometry(100, 100, 100);
-    material = new THREE.MeshBasicMaterial({ color: 0x002020 });
-    var vraicube = new THREE.Mesh(geometry, material);
-    vraicube.position.set(0, 0, 0);
-    scene.add(vraicube);
+    // geometry = new THREE.BoxGeometry(100, 100, 100);
+    // material = new THREE.MeshBasicMaterial({ color: 0x002020 });
+    // var vraicube = new THREE.Mesh(geometry, material);
+    // vraicube.position.set(0, 0, 0);
+    // scene.add(vraicube);
 
 
     arch(0, 0, 0);
@@ -174,16 +174,23 @@ function loadModel() {
 
 
     loader.load('model/Wildmill.glb', function (gltf) {
-
         let house = gltf.scene.children[0];
         house.scale.set(20, 20, 20);
         house.position.set(-1000, -100, -200);
         house.rotation.set(0, (Math.PI / -2), 0);
         scene.add(gltf.scene);
     }, undefined, function (error) {
-
         console.error(error);
+    });
 
+
+    loader.load('model/barrack.glb', function (gltf) {
+        let barrack = gltf.scene.children[0];
+        barrack.scale.set(20, 20, 20);
+        barrack.position.set(0, -400, -500);
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+        console.error(error);
     });
 
     loader.load('model/Wildmillwind.glb', function (gltf) {

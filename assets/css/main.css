@@ -4556,6 +4556,7 @@ body.is-menu-visible #menu {
 .text3dContent {
   height: 100vh;
   margin: 2em;
+  margin-top: 30em;
   padding: 2em;
   background-color: rgba(255, 255, 255, 0.089);
   border-radius: 2em;
