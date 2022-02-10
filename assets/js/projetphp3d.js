@@ -374,12 +374,12 @@ function text() {
         textGeo.position.set(-3400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('obtien des ressource', config);
+        geometry = new TextGeometry('obtien des ressources', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-2400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('nourrit tes sujet ', config);
+        geometry = new TextGeometry('nourrit tes sujets ', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-1400, 100, 0);
         scene.add(textGeo);
