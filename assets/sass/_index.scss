@@ -60,8 +60,18 @@
         animation: gradient 15s ease infinite;
     }
 
+
     video {
         display: block;
+    }
+}
+
+#banner.off{
+    background: none;
+
+    &::after{
+        background: none;
+
     }
 }
 

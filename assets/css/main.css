@@ -4508,6 +4508,14 @@ body.is-menu-visible #menu {
   display: block;
 }
 
+#banner.off {
+  background: none;
+}
+
+#banner.off::after {
+  background: none;
+}
+
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
