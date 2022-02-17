@@ -4443,6 +4443,113 @@ body.is-menu-visible #menu {
   margin: 1em;
 }
 
+.maintenance div.c {
+  position: relative;
+}
+
+.maintenance div.c div.p {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.maintenance div.c div.p .box ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.maintenance div.c div.p .box ul li p {
+  margin: 1em;
+  padding: 0;
+}
+
+.maintenance div.c div.p .box ul li .resultImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+}
+
+.maintenance div.c div.p .box ul li .resultImageContainer img {
+  margin: 2em;
+}
+
+.maintenance input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: 0;
+}
+
+.maintenance h1 {
+  background: #e2212f;
+  color: white;
+  padding: 1em;
+  position: relative;
+}
+
+.maintenance label::before {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  content: "";
+  display: inline-block;
+  border: 15px solid transparent;
+  border-left: 20px solid white;
+}
+
+.maintenance label {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.maintenance div.p {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.maintenance input:checked ~ h1 label::before {
+  border-left: 15px solid transparent;
+  border-top: 20px solid white;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.maintenance input:checked ~ h1 ~ div.p {
+  max-height: 1200px;
+}
+
+.maintenance a {
+  color: steelblue;
+}
+
 .box {
   display: block;
   position: relative;
