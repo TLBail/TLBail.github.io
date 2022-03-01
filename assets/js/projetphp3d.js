@@ -376,22 +376,22 @@ function text() {
         textGeo.position.set(-4400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('améliore tes batiments !', config);
+        geometry = new TextGeometry('Améliore tes batiments !', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-3400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('obtien des ressources', config);
+        geometry = new TextGeometry('Obtiens des ressources', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-2400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('nourrit tes sujets ', config);
+        geometry = new TextGeometry('nourrits tes sujets ', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-1400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('projetphp', config);
+        geometry = new TextGeometry('Projetphp', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-400, 100, 0);
         scene.add(textGeo);
@@ -408,7 +408,7 @@ function text() {
             bevelSegments: 5
         };
         var material = new THREE.MeshBasicMaterial({ color: 0xf54a60 });
-        geometry = new TextGeometry('DETRUIT LES TOUS', config);
+        geometry = new TextGeometry('DETRUITS LES TOUS', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(500, 100, -2000);
         scene.add(textGeo);
