@@ -4778,9 +4778,17 @@ body.is-menu-visible #menu {
 }
 
 .maintenance input:checked ~ h1 ~ div.p {
-  max-height: 1200px;
+  max-height: 2200px;
 }
 
 .maintenance a {
   color: steelblue;
+}
+
+.bigarticle {
+  margin: 1em;
+}
+
+.bigarticle ul {
+  margin: 0;
 }
