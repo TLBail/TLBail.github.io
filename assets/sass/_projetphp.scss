@@ -23,13 +23,17 @@
 }
 
 .text3dContent {
-    height: 100vh;
+    height: 110vh;
     margin: 2em;
     margin-top: 30em;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.089);
     border-radius: 2em;
     font-size: 1em;
+
+    h1{
+        margin-top: 2em;
+        text-align: center;
+    }
 }
 
 

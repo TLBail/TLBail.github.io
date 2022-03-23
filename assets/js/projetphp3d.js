@@ -391,7 +391,7 @@ function text() {
         textGeo.position.set(-1400, 100, 0);
         scene.add(textGeo);
 
-        geometry = new TextGeometry('Projetphp', config);
+        geometry = new TextGeometry('entraîne ton armé', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(-400, 100, 0);
         scene.add(textGeo);
@@ -408,7 +408,7 @@ function text() {
             bevelSegments: 5
         };
         var material = new THREE.MeshBasicMaterial({ color: 0xf54a60 });
-        geometry = new TextGeometry('DETRUITS LES TOUS', config);
+        geometry = new TextGeometry('DETRUIT LES TOUS', config);
         textGeo = new THREE.Mesh(geometry, material);
         textGeo.position.set(500, 100, -2000);
         scene.add(textGeo);
