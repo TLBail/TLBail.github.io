@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="assets/css/indexstyle.css" />
 	<script defer src="./assets/js/video.js"></script>
+	<script defer src="./assets/js/videoTeaser.js"></script>
 </head>
 
 <body class="is-preload">
@@ -324,7 +325,23 @@
 						<a href="https://github.com/cegepmatane/projet-specialise-2022-TLBail" class="button primary">
 							Voir le dépôt Github
 						</a>
+
+
+						<a class="button primary" onclick="lightbox_open();">
+							teaser
+						</a>
+
+
 					</p>
+					<div id="light">
+						<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+						<video id="VisaChipCardVideo" width="600" controls>
+							<source src="./images/teaser.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div id="fade" onClick="lightbox_close();"></div>
+
 				</div>
 
 				<div class="box">
