@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(d:\Document\GitHub\TLBail.github.io\assets\sass\font-awesome.min.css);
+@import url(c:\Users\theol\Github\TLBail.github.io\assets\sass\font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 /*
 
@@ -4709,6 +4709,57 @@ body.is-menu-visible #menu {
 .mediumImage {
   width: 45%;
   height: auto;
+}
+
+.colonne-option {
+  padding: 1em;
+}
+
+.colonne-option li {
+  border: 1px solid rgba(0, 0, 0, 0.812);
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  list-style-type: none;
+}
+
+.colonne-option li:hover {
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.812);
+          box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.812);
+}
+
+.colonne-option li:active {
+  -webkit-transition: none;
+  transition: none;
+  background-color: #303030;
+  color: #ead9d9;
+}
+
+@-webkit-keyframes appearFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes appearFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 #threecontainer {

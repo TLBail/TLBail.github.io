@@ -28,6 +28,7 @@
     position: relative;
     visibility: hidden;
     padding: 0;
+
     &:hover {
         height: auto;
         position: relative;
@@ -35,9 +36,11 @@
         margin: 0;
         visibility: visible;
     }
+
     li a {
         text-decoration: none;
         color: white;
+
         &:hover {
             text-decoration: underline;
             font-weight: 700;
@@ -69,10 +72,10 @@
 
 
 
-#banner.off{
+#banner.off {
     background: none;
 
-    &::after{
+    &::after {
         background: none;
 
     }
@@ -82,9 +85,11 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -93,4 +98,43 @@
 .mediumImage {
     width: 45%;
     height: auto;
+}
+
+
+.colonne-option {
+    padding: 1em;
+
+    li {
+        border: 1px solid rgba(0, 0, 0, 0.812);
+        border-radius: 10px;
+        margin: 10px;
+        transition: all ease 0.3s;
+        //remove decoration
+        list-style-type: none;
+    }
+
+    li:hover {
+        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.812);
+    }
+
+    li:active {
+        transition: none;
+        background-color: rgb(48, 48, 48);
+        color: rgb(234, 217, 217);
+    }
+
+}
+
+
+
+@keyframes appearFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

@@ -99,15 +99,6 @@
 						</header>
 						<div class="dropdown">
 							<a href="/cvtheolebail.pdf" class="button primary fit">Voir mon cv</a>
-							<!-- 
-							<ul class="dropdowncontent">
-								<li>
-									<a href="/cvtheolebail.pdf" class="button primary fit">telecharger en pdf</a>
-								</li>
-								<li>
-									<a href="https://tlbail.fr/cv" class="button primary fit">voir mon cv</a>
-								</li>
-							</ul> -->
 						</div>
 					</div>
 				</section>
@@ -145,16 +136,6 @@
 					</div>
 				</section>
 
-				<!-- <section>
-					<div class="content">
-						<header>
-							<a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
-							<h3>Et donner lui de l'argent</h3>
-						</header>
-						<p>Paypal CB tout</p>
-					</div>
-				</section>
-				 -->
 				<section onclick="goto('https://www.cegep-matane.qc.ca/')">
 					<div class="content">
 						<header>
@@ -164,17 +145,6 @@
 						<p>Actuellement au Québec au Cégep de Matane</p>
 					</div>
 				</section>
-
-				<!-- <section>
-					<div class="content">
-						<header>
-							<a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
-							<h3>J'ai un compte unity</h3>
-						</header>
-						<p>jpense il y a des truc incroyalbe dessus</p>
-					</div>
-				</section>
-			 -->
 			</div>
 		</div>
 	</section>
@@ -191,6 +161,11 @@
 		<div id="sommaireProjetboye" class="sommaireProject off">
 
 			<ul>
+				<li class="vr">
+				<li onclick="goto('#android')">
+					Blockchain
+				</li>
+				</li>
 				<li class="vr">
 				<li onclick="goto('#android')">
 					Android
@@ -212,6 +187,73 @@
 		<div id="visor" class="inner">
 
 			<div class="content">
+
+				<hr id="android">
+				<h1>
+					Blockchain
+				</h1>
+				<hr>
+				<div class="box">
+
+					<h4>Librairie npm réalisée pendant mon stage de fin d'études.</h4>
+
+					<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"
+						alt="">
+					<img src="https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"
+						alt="">
+					<img src="https://img.shields.io/badge/Hardhat-3DDC84?style=for-the-badge&logo=hardhat&logoColor=white"
+						alt="">
+					<img src="https://img.shields.io/badge/Etherjs-3DDC84?style=for-the-badge&logo=etherjs&logoColor=white"
+						alt="">
+					<img src="https://img.shields.io/badge/Pinata-3DDC84?style=for-the-badge&logo=pinata&logoColor=white"
+						alt="">
+					<img src="https://img.shields.io/badge/OpenZeppelin-3DDC84?style=for-the-badge&logo=openzeppelin&logoColor=white"
+						alt="">
+					<div style="
+					display: flex;
+					 width: 100%;
+			">
+						<ul class="colonne-option" style=" 
+							border-right: 3px solid #000000d4;
+							margin: 2em;
+										;">
+							<li onclick="onlibrairieButtonClicked('@ikalasdev/erc20generator')">
+								@ikalasdev/erc20generator
+							</li>
+							<li onclick="onlibrairieButtonClicked('@ikalasdev/nftgenerator')">
+								@ikalasdev/nftgenerator
+							</li>
+							<li onclick="onlibrairieButtonClicked('@ikalasdev/multisender')">
+								@ikalasdev/multisender
+							</li>
+							<li onclick="onlibrairieButtonClicked('@ikalasdev/fund-receiver')">
+								@ikalasdev/fund-receiver
+							</li>
+							<li onclick="onlibrairieButtonClicked('@ikalasdev/contractmanager')">
+								@ikalasdev/contractmanager
+							</li>
+						</ul>
+						<div id="libraireShowCase" class="content-npmjs" style="
+						flex-grow: 3;
+						margin: 2em;
+						animation: appearFromRight 1s cubic-bezier(0.02, 0.86, 0.58, 1)">
+							<h2> @ikalasdev/erc20generator
+							</h2>
+							<p>
+								Package npm qui permet de déployer un contrat erc20 personnalisé.
+							</p>
+							<a href="https://github.com/ikalasdev/ERC20Generator" class="button primary ">Voir le
+								dépôt</a>
+							<a href="https://www.npmjs.com/package/@ikalasdev/erc20generator"
+								class="button primary">voir sur npmjs.com</a>
+
+						</div>
+
+					</div>
+				</div>
+
+
+
 
 				<hr id="android">
 				<h1>
@@ -499,17 +541,8 @@
 			<div class="content">
 
 				<section>
-					<!-- <h3>lol</h3>
-					<p>lol</p> -->
 				</section>
 				<section>
-					<!-- <h4>lol</h4>
-					<ul class="alt">
-						<li><a href="#">lol</a></li>
-						<li><a href="#">lol</a></li>
-						<li><a href="#">lol</a></li>
-						<li><a href="#">lol</a></li>
-					</ul> -->
 				</section>
 				<section>
 					<h4>Contact</h4>
@@ -537,7 +570,7 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/sommaire.js"></script>
 	<script src="assets/js/link.js"></script>
-
+	<script src="./assets/js/carrouselIndex.js"></script>
 </body>
 
 </html>
